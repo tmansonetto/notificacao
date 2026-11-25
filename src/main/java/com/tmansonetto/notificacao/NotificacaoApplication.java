@@ -1,4 +1,4 @@
-package com.tmasonetto.notificacao;
+package com.tmansonetto.notificacao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
