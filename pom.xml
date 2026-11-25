@@ -8,7 +8,7 @@
 		<version>4.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tmasonetto</groupId>
+	<groupId>com.tmansonetto</groupId>
 	<artifactId>notificacao</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
@@ -29,6 +29,17 @@
 	<properties>
 		<java.version>25</java.version>
 	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>bom</artifactId>
+				<version>2.30.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -51,9 +62,8 @@
 			<version>2.21.8</version>
 		</dependency>
 		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk-sns</artifactId>
-			<version>1.12.641</version>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sns</artifactId>
 		</dependency>
 
 
